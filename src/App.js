@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:5000/`)
+    axios.get(`https://rabit-demo-api.herokuapp.com/`)
       .then((res) => {
         this.setState({ posts: res.data })
       }).catch((err) => console.error('Error occured during fetching artist details', err))
